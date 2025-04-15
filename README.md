@@ -6,7 +6,7 @@ Création d'un FAQ (Foire Aux Questions) animé en HTML5, CSS3 et Javascript et 
 
 ## Démonstration
 
-Lien vers le projet :
+Lien vers le projet : https://aperbet56.github.io/FAQ/
 
 ## Projet développé avec
 
