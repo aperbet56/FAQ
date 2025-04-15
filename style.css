@@ -160,3 +160,31 @@ footer span {
     font-size: 20px;
     font-weight: 700;
 }
+
+/**** Responsive design tablette ****/
+
+@media screen and (max-width: 992px) {
+    .faq__section {
+        background-color: #d3bdff;
+    }
+
+    .faq__question {
+        border-bottom: 3px dotted #111111;
+    }
+
+    .faq__question-toggler {
+        padding: 16px 0;
+    }
+
+    .faq__question-toggler-text {
+        font-size: 18px;
+    }
+
+    .faq__question-text {
+        font-size: 16px;
+    }
+
+    .faq__link:hover {
+        color: #ffffff;
+    }
+}
