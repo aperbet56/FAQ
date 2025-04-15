@@ -1,0 +1,162 @@
+/**** reset ****/
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+button {
+    border: none;
+}
+
+/**** body et footer ****/
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Inter, Helvetica, sans-serif;
+    background-color: #d3bdff;
+}
+
+/**** header ****/
+
+.header,
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 20px 45px;
+}
+
+.header {
+    flex-direction: column;
+}
+
+.header__title {
+    font-size: 42px;
+    margin-bottom: 30px;
+}
+
+.header__title,
+.header__subtitle,
+footer span {
+    text-align: center;
+}
+
+.header__subtitle,
+footer span {
+    font-family: open sans, sans-serif;
+}
+
+/**** main ****/
+
+main {
+    flex-grow: 1;
+}
+
+/**** section ****/
+
+.faq__section {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    padding: 90px 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+.faq__question {
+    border-bottom: 4px dotted #111111;
+}
+
+.faq__question-toggler {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    padding: 24px 0;
+    cursor: pointer;
+}
+
+.faq__question-toggler,
+.faq__content-text,
+.faq__link {
+    color: #111111;
+}
+
+.faq__question-toggler-icon--active {
+    transform: rotate(90deg);
+}
+
+.faq__question-toggler-icon {
+    width: 30px;
+    height: 30px;
+}
+
+/**** pour e.target ****/
+
+.faq__question-toggler-icon,
+.faq__question-toggler-text {
+    pointer-events: none;
+}
+
+.faq__question-toggler-text {
+    font-family: Inter, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 12px;
+}
+
+/**** Animation de "hauteur" avec CSS Grid ****/
+
+.faq__content-container {
+    display: grid;
+    grid-template-rows: 0fr;
+    visibility: hidden;
+    opacity: 0;
+    transition:
+        visibility 0.4s ease-in-out,
+        opacity 0.4s ease-in-out,
+        grid-template-rows 0.4s ease-in-out;
+}
+
+.faq__content-container--active {
+    visibility: visible;
+    opacity: 1;
+    grid-template-rows: 1fr;
+}
+
+.faq__content {
+    overflow: hidden;
+}
+
+.faq__content-text {
+    line-height: 1.6;
+    font-size: 18px;
+    padding-bottom: 28px;
+}
+
+.faq__link {
+    font-weight: 500;
+    text-decoration-thickness: 2px;
+    transition: color 0.4s ease-in-out;
+}
+
+.faq__link:hover {
+    color: #a37cf1;
+}
+
+/**** footer span ****/
+
+footer span {
+    font-size: 20px;
+    font-weight: 700;
+}
