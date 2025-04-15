@@ -161,7 +161,7 @@ footer span {
     font-weight: 700;
 }
 
-/**** Responsive design tablette ****/
+/**** Responsive design version tablette ****/
 
 @media screen and (max-width: 992px) {
     .faq__section {
@@ -186,5 +186,30 @@ footer span {
 
     .faq__link:hover {
         color: #ffffff;
+    }
+}
+
+/**** Responsive design version mobile ****/
+
+@media screen and (max-width: 572px) {
+    .faq__question {
+        border-bottom: 2px dotted #111111;
+    }
+
+    .faq__question-toggler {
+        padding: 12px 0;
+    }
+
+    .faq__question-toggler-text {
+        font-size: 16px;
+    }
+
+    .faq__question-text {
+        font-size: 14px;
+    }
+
+    .faq__question-toggler-icon {
+        width: 25px;
+        height: 25px;
     }
 }
