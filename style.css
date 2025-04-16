@@ -98,6 +98,11 @@ main {
     border-bottom: 4px dotted #111111;
 }
 
+.faq__question {
+    font-family: Inter, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
 .faq__question-toggler {
     width: 100%;
     display: flex;
@@ -130,8 +135,6 @@ main {
 }
 
 .faq__question-toggler-text {
-    font-family: Inter, Helvetica, sans-serif;
-    font-size: 20px;
     font-weight: 700;
     margin-left: 12px;
 }
@@ -198,12 +201,12 @@ footer span {
         border-bottom: 3px dotted #111111;
     }
 
-    .faq__question-toggler {
-        padding: 16px 0;
+    .faq__question {
+        font-size: 18px;
     }
 
-    .faq__question-toggler-text {
-        font-size: 18px;
+    .faq__question-toggler {
+        padding: 16px 0;
     }
 
     .faq__question-text {
@@ -224,12 +227,12 @@ footer span {
         border-bottom: 2px dotted #111111;
     }
 
-    .faq__question-toggler {
-        padding: 12px 0;
+    .faq__question {
+        font-size: 16px;
     }
 
-    .faq__question-toggler-text {
-        font-size: 16px;
+    .faq__question-toggler {
+        padding: 12px 0;
     }
 
     .faq__question-text {
