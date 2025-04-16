@@ -33,11 +33,11 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 25px 20px 45px;
 }
 
 .header {
     flex-direction: column;
+    padding: 25px 20px 45px;
 }
 
 .header__title {
@@ -53,6 +53,7 @@ footer span {
 
 .header__subtitle,
 footer span {
+    font-size: 26px;
     font-family: open sans, sans-serif;
 }
 
@@ -73,6 +74,26 @@ main {
     border-radius: 8px;
 }
 
+.faq__section__title,
+.faq__section__subtitle {
+    text-align: center;
+}
+
+.faq__section__title {
+    font-size: 24px;
+    font-style: italic;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.faq__section__subtitle {
+    font-size: 20px;
+    font-family: open sans, sans-serif;
+    margin-bottom: 35px;
+    padding-bottom: 20px;
+}
+
+.faq__section__subtitle,
 .faq__question {
     border-bottom: 4px dotted #111111;
 }
@@ -156,6 +177,10 @@ main {
 
 /**** footer span ****/
 
+footer {
+    padding: 35px 20px 25px;
+}
+
 footer span {
     font-size: 20px;
     font-weight: 700;
@@ -168,6 +193,7 @@ footer span {
         background-color: #d3bdff;
     }
 
+    .faq__section__subtitle,
     .faq__question {
         border-bottom: 3px dotted #111111;
     }
@@ -192,6 +218,8 @@ footer span {
 /**** Responsive design version mobile ****/
 
 @media screen and (max-width: 572px) {
+
+    .faq__section__subtitle,
     .faq__question {
         border-bottom: 2px dotted #111111;
     }
